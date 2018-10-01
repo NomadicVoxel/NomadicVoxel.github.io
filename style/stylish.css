@@ -1,3 +1,5 @@
+*{box-sizing:border-box;}
+
 body{
     background: #1E1E1E;
     color: #ADADAD;
@@ -6,3 +8,42 @@ body{
 h1, h2, h3, h4, h5, h6, .heading {
     text-align:center;
 }
+
+main{
+    border-left: 1px solid #ADADAD;
+    border-right: 1px solid #ADADAD;
+    max-width: 50em;
+    margin:0 auto;
+    padding: 2em;
+}
+
+p.short {text-align:center;}
+
+
+figure{
+    margin:0;
+    text-align:center;
+
+}
+
+figcaption{
+    text-align:center;
+    width:100%;
+    padding:.5em;
+    padding-bottom:1em;
+    text-transform: uppercase
+}
+
+ul.thumbs{
+    list-style:none;
+    display: flex;
+    padding:0;
+}
+
+.thumb{
+    flex-grow:1;
+    flex-basis:0;
+    width:200px;
+    background:#111;
+}
+
