@@ -47,3 +47,20 @@ ul.thumbs{
     background:#111;
 }
 
+nav{
+text-align:center;
+}
+
+a{
+    color:#FFF;
+    font-style: italic;
+}
+a:before{
+    content:"[";
+}
+a:after{
+    content:"]";
+}
+a:before, a:after{
+    font-style:normal;
+}
