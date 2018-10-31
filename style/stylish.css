@@ -37,6 +37,7 @@ figcaption{
 ul.thumbs{
     list-style:none;
     display: flex;
+    flex-wrap:wrap;
     padding:0;
 }
 
@@ -45,6 +46,11 @@ ul.thumbs{
     flex-basis:0;
     width:200px;
     background:#111;
+    margin:.5em;
+}
+.thumbnail{
+    width:100%;
+    background-color:white;
 }
 
 nav{
@@ -55,10 +61,10 @@ a{
     color:#FFF;
     font-style: italic;
 }
-a:before{
+nav>a:before{
     content:"[";
 }
-a:after{
+nav>a:after{
     content:"]";
 }
 a:before, a:after{
