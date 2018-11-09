@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass+Mono|Philosopher');
+
 *{box-sizing:border-box;}
 
 body{
     background: #1E1E1E;
     color: #ADADAD;
+    font-family: 'Overpass Mono', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, .heading {
     text-align:center;
+    font-family:"Philosopher", serif;
 }
 
 main{
@@ -31,7 +35,6 @@ figcaption{
     width:100%;
     padding:.5em;
     padding-bottom:1em;
-    text-transform: uppercase
 }
 
 ul.thumbs{
@@ -59,7 +62,6 @@ text-align:center;
 
 a{
     color:#FFF;
-    font-style: italic;
 }
 nav>a:before{
     content:"[";
