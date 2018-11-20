@@ -35,6 +35,7 @@ figcaption{
     width:100%;
     padding:.5em;
     padding-bottom:1em;
+    vertical-align:bottom;
 }
 
 ul.thumbs{
