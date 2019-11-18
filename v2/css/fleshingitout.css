@@ -1,0 +1,157 @@
+*{box-sizing:border-box;}
+img{display:block;}
+/* Headings
+  _    _                _ _                   
+ | |  | |              | (_)                  
+ | |__| | ___  __ _  __| |_ _ __   __ _ ___   
+ |  __  |/ _ \/ _` |/ _` | | '_ \ / _` / __|  
+ | |  | |  __/ (_| | (_| | | | | | (_| \__ \_ 
+ |_|  |_|\___|\__,_|\__,_|_|_| |_|\__, |___(_)
+                                   __/ |      
+                                  |___/       
+ */
+strong, em, b, i{
+	font-weight:normal;
+	color:hsl(var(--secondary-hue),50%,67%)
+}
+h1,h2,h3,h4,h5,h6{
+	color:hsl(var(--secondary-hue),76%,49%)
+}
+
+/* Nav stuff 
+  _   _                   _          __  __ 
+ | \ | |                 | |        / _|/ _|
+ |  \| | __ ___   __  ___| |_ _   _| |_| |_ 
+ | . ` |/ _` \ \ / / / __| __| | | |  _|  _|
+ | |\  | (_| |\ V /  \__ \ |_| |_| | | | |_ 
+ |_| \_|\__,_| \_/   |___/\__|\__,_|_| |_(_)
+*/
+nav{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+}
+
+a.box, a.box:visited{
+	display:block;
+	color:#FFF;
+	text-decoration:none;
+	padding:.25em .6em;
+	border:.05em solid #fff;
+	margin:0 .25rem;
+	flex-basis:0;
+}
+a.box:hover, a.box:active{
+	display:block;
+	color:hsl(var(--accent-hue), 76%,49%);
+	border:.1em solid hsl(var(--accent-hue), 76%,49%);
+}
+nav{
+	text-align:center;
+	background-image: linear-gradient(
+		to right,
+		transparent 0,
+		hsl(var(--accent-hue), 76%, 49%) 25%,
+		hsl(var(--accent-hue), 76%, 49%) 75%,
+		transparent 100%
+	);
+	background-size:100% 1px;
+	background-repeat:no-repeat;
+	background-position:bottom;
+	padding:1rem;
+	font-size:2rem;
+}
+a.brackets:before{
+    content:"[ ";
+}
+a.brackets:after{
+    content:" ]";
+}
+a.brackets{
+	text-decoration:none;
+}
+
+/* Tiles
+  _______ _ _           
+ |__   __(_) |          
+    | |   _| | ___  ___ 
+    | |  | | |/ _ \/ __|
+    | |  | | |  __/\__ \
+    |_|  |_|_|\___||___/
+*/
+ul.tiles li {
+	display:flex;
+	flex-direction:row;
+	text-align:left;
+	padding:.5rem;
+	width:100%;
+	margin:1rem;
+	justify-content:space-evenly;
+	/* align-items:center; */
+	border:1px solid hsl(var(--accent-hue), 76%, 49%);
+	align-items:center;
+}
+ul.tiles li p, ul.tiles li img{
+	display:block;
+	width:50%;
+	height:100%;
+	padding:.5em;
+	text-align:center;
+	margin:.25em;
+}
+ul.tiles li > a{
+	padding:0;
+	margin:0;
+	display:block;
+	width:50%;
+	height:100%;
+	text-align:center;
+}
+ul.tiles li:first-child{
+	border-right:1px solid hsl(var(--accent-hue), 76%, 49%);
+}
+
+section a img{
+	width:100%;
+}
+
+
+
+/* Miscelany 
+  __  __ _            
+ |  \/  (_)           
+ | \  / |_ ___  ___   
+ | |\/| | / __|/ __|  
+ | |  | | \__ \ (__ _ 
+ |_|  |_|_|___/\___(_)
+*/
+body{padding:0 1%;}
+
+.grid-container section p{text-align:left;}
+
+*{box-sizing:border-box;}
+
+/* 
+Reusable snippets and examples
+   _____       _                  _       
+  / ____|     (_)                | |      
+ | (___  _ __  _ _ __  _ __   ___| |_ ___ 
+  \___ \| '_ \| | '_ \| '_ \ / _ \ __/ __|
+  ____) | | | | | |_) | |_) |  __/ |_\__ \
+ |_____/|_| |_|_| .__/| .__/ \___|\__|___/
+                | |   | |                 
+                |_|   |_|                 
+ */
+/* .grid-container {
+	background-image: linear-gradient(
+		to bottom,
+		transparent 0,
+		hsl(var(--accent-hue), 76%, 49%) 5rem,
+		hsl(var(--accent-hue), 76%, 49%) 75%,
+		transparent 100%
+	);
+	background-size:1px 100%;
+	background-repeat:no-repeat;
+	background-position:left;
+	padding:1rem;
+} */
