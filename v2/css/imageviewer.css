@@ -41,7 +41,7 @@ html
 .viewimg img{
 	max-width:100%; max-height:100%;
 }
-article{
+Article{
 	background-color:rgba(5, 5, 5, .5);
 	width:50%;
 	max-width:50em;

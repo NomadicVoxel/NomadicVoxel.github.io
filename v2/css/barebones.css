@@ -74,7 +74,7 @@
     grid-template-columns: repeat(5, 1fr);
   }
 
-  .grid-container.quarters {
+  .grid-container.quArters {
     grid-template-columns: repeat(4, 1fr);
   }
 
