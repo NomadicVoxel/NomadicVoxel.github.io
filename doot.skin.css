@@ -1,0 +1,40 @@
+/* Doot: A skeletal framework by NomadicVoxel. Still in production. */
+
+/*	Vars up top are more decorative. 
+	The further south, the more practical and less interesting they get.
+	Deleting any won't exactly *hurt*, but anything that uses those properties will resort to browser defaults.*/
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root { /* light by default */
+	/* Colors and backdrops*/
+	--canvas: #dedbee;
+	--ink: #171a18;
+	--accent: #6200ff;
+	--toolbarBackground: linear-gradient(-45deg, #0099ff, #8400ff);
+	/* Fonts */
+	--serif: 'Philosopher', serif;
+	--sans: 'Source Sans Pro', sans-serif;
+	--mono: 'Source Code Pro', monospace;
+	/* Line styles */
+	--thinLine: .05em solid;
+	--thickLine: .1em solid;
+	/* Gutters and padding */
+	--breathingRoom: 1em;
+}
+@media screen and (prefers-color-scheme: dark) {
+	:root {
+		--canvas: #000;
+		--ink: #dedbee;
+	}
+}
+
+body{
+	font-family:var(--sans);
+}
+h1, h2, h3, h4, h5, h6, caption, address,dfn{
+	font-family:var(--serif);
+	font-style:normal;
+}
+code, kbd, pre, samp, var{font-family:var(--mono); font-style:normal;}

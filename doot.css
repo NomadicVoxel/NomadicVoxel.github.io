@@ -1,0 +1,43 @@
+/* Doot: A skeletal framework by NomadicVoxel. Still in production. */
+
+@import url("doot.skin.css");
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	background: var(--canvas);
+	color: var(--ink);
+}
+
+.SpoilerToggle:checked~.Spoiler, .SpoilerToggle {
+	display: none;
+}
+
+.Drawer {
+	height: 100%;
+	padding: var(--breathingRoom);
+}
+
+.Left.Drawer {
+	float: left;
+	margin-right: var(--breathingRoom);
+}
+
+.Right.Drawer {
+	float: right;
+	margin-left: var(--breathingRoom);
+}
+
+.sans {
+	font-family: var(--sans);
+}
+
+.serif {
+	font-family: var(--serif);
+}
+
+.mono {
+	font-family: var(--mono);
+}
