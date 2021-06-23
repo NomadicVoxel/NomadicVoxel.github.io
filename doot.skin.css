@@ -1,34 +1,16 @@
-/* Doot: A skeletal framework by NomadicVoxel. Still in production. */
+/* * Doot: A skeletal framework by NomadicVoxel. Still in development. */
 
-/*	Vars up top are more decorative. 
-	The further south, the more practical and less interesting they get.
-	Deleting any won't exactly *hurt*, but anything that uses those properties will resort to browser defaults.*/
-@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* * Theme details are broken into subject.
+	Deleting any won't exactly *hurt*, but anything that uses those properties will resort to browser defaults. */
+
+/* * Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-:root { /* light by default */
-	/* Colors and backdrops*/
-	--canvas: #dedbee;
-	--ink: #171a18;
-	--accent: #6200ff;
-	--toolbarBackground: linear-gradient(-45deg, #0099ff, #8400ff);
-	/* Fonts */
-	--serif: 'Philosopher', serif;
+:root {
+	--serif: 'Source Serif Pro', serif;
 	--sans: 'Source Sans Pro', sans-serif;
-	--mono: 'Source Code Pro', monospace;
-	/* Line styles */
-	--thinLine: .05em solid;
-	--thickLine: .1em solid;
-	/* Gutters and padding */
-	--breathingRoom: 1em;
-}
-@media screen and (prefers-color-scheme: dark) {
-	:root {
-		--canvas: #000;
-		--ink: #dedbee;
-	}
-}
+	--mono: 'Source Code Pro', monospace;}
 
 body{
 	font-family:var(--sans);
@@ -37,4 +19,30 @@ h1, h2, h3, h4, h5, h6, caption, address,dfn{
 	font-family:var(--serif);
 	font-style:normal;
 }
-code, kbd, pre, samp, var{font-family:var(--mono); font-style:normal;}
+code, kbd, pre, samp, var{
+	font-family:var(--mono);
+	font-style:normal;
+}
+
+/* *Colors */
+:root{
+	--canvas: #dedbee;
+	--ink: #171a18;
+	--accent: #6200ff;}
+@media screen and (prefers-color-scheme: dark) {
+	:root {
+		--canvas: #000;
+		--ink: #dedbee;}}
+
+/* * Line styles */
+:root{
+	--thinLine: .05rem solid;
+	--thickLine: .1rem solid;
+}
+
+/* * Padding, spacing, and scaling */
+:root{
+	--breathingRoom: .25em;
+	--maxWidth: 50rem;
+	--headerScale:1.5rem;
+}
